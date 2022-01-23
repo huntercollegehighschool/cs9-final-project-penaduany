@@ -17,11 +17,11 @@ code = input("Which game would you like to play? ")
 if code == 'Rock Paper Scissors':
     os.system('clear')
     time.sleep(0.5)
-    import RPS
+    import page2
 elif code == 'Hangman':
     os.system('clear')
     time.sleep(0.5)
-    import Hangman
+    import page1
 while code != 'Rock Paper Scissors' and code != 'Hangman' :
     print("Not a valid game. Try again")
     time.sleep(1)
@@ -33,11 +33,11 @@ while code != 'Rock Paper Scissors' and code != 'Hangman' :
     if code == 'Rock Paper Scissors':
         os.system('clear')
         time.sleep(0.5)
-        import RPS
+        import page2
     elif code == 'Hangman':
         os.system('clear')
         time.sleep(0.5)
-        import Hangman
+        import page1
 #import page1
 #import page2
 #import page3  # uncomment if you're using page3
