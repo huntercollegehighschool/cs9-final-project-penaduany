@@ -9,9 +9,8 @@ import time
 
 print(
     "Welcome to the Game House."
-)  #You can change 'Game House' to whatever you want it to be, I just put it there for now
 print(
-    "If you would like to play Rock Paper Scissors, write Rock Paper Scissors on the next line. If you would like to play Hangman, write Hangman."
+    "If you would like to play Rock Paper Scissors, write Rock Paper Scissors on the next line. If you would like to play Hangman, write Hangman. If you would like to play Tic Tac Toe, enter Tic Tac Toe."
 )
 code = input("Which game would you like to play? ")
 if code == 'Rock Paper Scissors':
@@ -22,13 +21,17 @@ elif code == 'Hangman':
     os.system('clear')
     time.sleep(0.5)
     import page1
-while code != 'Rock Paper Scissors' and code != 'Hangman' :
+elif code == 'Tic Tac Toe':
+    os.system('clear')
+    time.sleep(0.5)
+    import page3
+while code != 'Rock Paper Scissors' and code != 'Hangman' and code != 'Tic Tac Toe':
     print("Not a valid game. Try again")
     time.sleep(1)
     os.system('clear')
     print(
-    "If you would like to play Rock Paper Scissors, write Rock Paper Scissors on the next line. If you would like to play Hangman, write Hangman. "
-    )
+    "If you would like to play Rock Paper Scissors, write Rock Paper Scissors on the next line. If you would like to play Hangman, write Hangman. If you would like to play Tic Tac Toe, enter Tic Tac Toe."
+)
     code = input("Which game would you like to play? ")
     if code == 'Rock Paper Scissors':
         os.system('clear')
@@ -38,7 +41,11 @@ while code != 'Rock Paper Scissors' and code != 'Hangman' :
         os.system('clear')
         time.sleep(0.5)
         import page1
+    elif code == 'Tic Tac Toe':
+        os.system('clear')
+        time.sleep(0.5)
+        import page3
 #import page1
 #import page2
-#import page3  # uncomment if you're using page3
+#import page3
 #import page4  # uncomment if you're using page4
